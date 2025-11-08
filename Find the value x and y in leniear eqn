@@ -1,0 +1,17 @@
+# this program is made for find the value of x and y
+print("To find the value of x and y")
+a1= int(input("enter the value of a1 :")) # example = let the eqn1 3x+4y-10=0
+b1= int(input("enter the value of b1 :"))#hence a1= 3,  b1= 4,  c1=-10 
+c1= int(input("enter the value of c1 :"))#let the eqn2 2x-2y-2=0
+a2= int(input("enter the value of a2 :"))#hence a2= 2,  b2= -2,  c2=-2
+b2= int(input("enter the value of b2 :"))
+c2= int(input("enter the value of c2 :"))
+if a1/a2!=b1/b2 :
+	print("lines are intersecting at point it has unique solution")
+	x=(b1*c2-b2*c1)/(a1*b2-a2*b1)
+	y=(c1*a2-c2*a1)/(a1*b2-a2*b1)
+	print("value of x=",x,"value of y=",y)#x=2, y=1
+elif a1/a2==b1/b2==c1/c2 :
+	print("lines are coincident it have infinitely many solution")
+else:
+	print("lines are parallel it have no solution")
