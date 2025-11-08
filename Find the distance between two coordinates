@@ -1,0 +1,12 @@
+from math import sqrt
+print("coardinate distance calculator")#ex the cordinates is (-5,7),(-1,3)
+x1= int(input("enter the value of x1 :")) #x1=-5
+x2= int(input("enter the value of x2:"))#x2=-1
+y1=int(input("enter the value of y1 :"))#y1=7
+y2=int(input("enter the value of y2 :"))#y2=3
+x=x2-x1
+y=y2-y1
+sx= pow(x,2)
+sy=pow(y,2)
+formula= sqrt(sx+sy)
+print("distance=",formula,"squnit")
